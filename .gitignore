@@ -1,4 +1,5 @@
 dashboard_data/
+outputs/
 
 *.db
 
