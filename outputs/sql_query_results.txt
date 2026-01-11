@@ -1,0 +1,59 @@
+SQL QUERY RESULTS FROM DATABASE TESTING
+==================================================
+
+QUERY 1: CUSTOMER PURCHASE SUMMARY
+   total_customers  total_orders  ...  avg_order_value  delivered_orders
+0            99441         99441  ...        154.10038             96478
+
+[1 rows x 5 columns]
+
+QUERY 2: REVENUE BY STATE (Top 10)
+  customer_state  order_count  ...  total_revenue  avg_order_value
+0             SP        40500  ...     5770266.19       136.387118
+1             RJ        12350  ...     2055690.45       158.081394
+2             MG        11354  ...     1819277.61       154.123823
+3             RS         5345  ...      861802.40       155.447763
+4             PR         4923  ...      781919.55       152.450682
+5             SC         3546  ...      595208.40       162.580825
+6             BA         3256  ...      591270.60       169.759001
+7             DF         2080  ...      346146.17       161.599519
+8             GO         1957  ...      334294.22       163.309340
+9             ES         1995  ...      317682.65       153.618303
+
+[10 rows x 5 columns]
+
+QUERY 3: DELIVERY TIME ANALYSIS
+  customer_state  ...  max_delivery_days
+0             AM  ...         138.877789
+1             AL  ...          90.960995
+2             PA  ...         195.634016
+3             MA  ...         168.082801
+4             SE  ...         194.633611
+5             CE  ...         168.181910
+6             PB  ...         102.170660
+7             PI  ...         194.850174
+8             RO  ...          50.779942
+9             BA  ...         167.943750
+
+[10 rows x 5 columns]
+
+QUERY 4: TOP PRODUCT CATEGORIES
+    product_category_name  order_count  ...   avg_price  unique_products
+0            beleza_saude         8647  ...  130.283330             2397
+1      relogios_presentes         5495  ...  199.040276             1300
+2         cama_mesa_banho         9272  ...   93.438762             2991
+3           esporte_lazer         7530  ...  113.254958             2822
+4  informatica_acessorios         6530  ...  116.264339             1600
+5        moveis_decoracao         6307  ...   87.246040             2593
+6   utilidades_domesticas         5743  ...   90.600249             2282
+7              cool_stuff         3559  ...  164.121598              770
+8              automotivo         3810  ...  139.847017             1853
+9              brinquedos         3804  ...  116.944536             1373
+
+[10 rows x 5 columns]
+
+RFM STATISTICS SUMMARY
+   total_customers  ...  high_value_customers
+0            96478  ...                  2255
+
+[1 rows x 7 columns]
